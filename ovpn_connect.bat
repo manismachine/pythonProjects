@@ -1,0 +1,1 @@
+"C:\Program Files\OpenVPN\bin\openvpn-gui.exe" --command connect it132.nordvpn.com.udp1194.ovpn

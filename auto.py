@@ -25,27 +25,13 @@ def start_software():
     androidstudio_path = r"D:\\android-studio-2021.3.1.5-windows\\android-studio\\bin\\studio64.exe"
     opnvpn_path = r"C:\\Program Files\\OpenVPN\\bin\\openvpn-gui.exe"
     opnvpn_connect = r"C:\\Users\\sam\\PycharmProjects\\pythonProject\\ovpn_connect.bat"
-    urls = [atom_path, pycharm_path, androidstudio_path]
+    urls = [pycharm_path, androidstudio_path]
 
     for item in urls:
         system(f"{item}")
 
-
-def check_internet():
-    import requests
-    try:
-        if requests.get('https://google.com').ok:
-            print("You're Online")
-            start_webBrowser()
-        else:
-            check_internet()
-    except:
-        print("You're Offline")
-        time.sleep(10)
-        check_internet()
+    start_webBrowser()
 
 
 if __name__ == '__main__':
     start_software()
-
-    check_internet()

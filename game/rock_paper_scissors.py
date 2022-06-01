@@ -6,7 +6,7 @@ def play(player, opponent):
         return print('It\'s a tie !!')
     elif is_win(user_input, computer_input):
         return print(f'you won . computers guess was {computer_input}')
-    return print('you lost')
+    return print('you lost computer choice is vinti')
 
 
 def is_win(user_input,computer_input):
